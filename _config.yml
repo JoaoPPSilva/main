@@ -2,7 +2,7 @@ title: Personal
 email: joaoppsilva@gmail.com
 description: >-
   Personal
-baseurl: "/JoaoPPSilva/main"
+baseurl: "/main"
 url: ""
 github_username:  JoaoPPSilva
 
@@ -13,7 +13,7 @@ readme_index:
 
 aux_links:
   "GitHub":
-    - "//github.kyndryl.net/PTINS507/Personal"
+    - "//github.com/JoaoPPSilva/main"
 
 # Build settings
 markdown: kramdown
