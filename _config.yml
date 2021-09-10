@@ -1,0 +1,22 @@
+title: Personal
+email: joaoppsilva@gmail.com
+description: >-
+  Personal
+baseurl: "/PTINS507/Personal"
+url: ""
+github_username:  PTINS507
+
+readme_index:
+  enabled:          true
+  remove_originals: true
+  with_frontmatter: true
+
+aux_links:
+  "GitHub":
+    - "//github.kyndryl.net/PTINS507/Personal"
+
+# Build settings
+markdown: kramdown
+remote_theme: pmarsceill/just-the-docs
+plugins:
+  - jekyll-readme-index
