@@ -3,6 +3,7 @@ layout: home
 title: Virtual Machines
 nav_order: 2
 parent: PowerCLI
+grand_parent: Commands
 ---
 
 PowerCLI
