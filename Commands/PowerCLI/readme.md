@@ -28,7 +28,7 @@ This section is intended for PowerCLI commands.
 
 `Get-View -ViewType HostSystem -Property Name, Config.Product | Select Name,{$_.Config.Product.FullName},{$_.Config.Product.Build} | ft -auto`
 
-- Login & Logout on v~Center
+- Login & Logout on vCenter
 `Connect-VIServer- Server FQDN server`
 `Disconnect-VIServer -Server FQDN server`
 
