@@ -1,6 +1,6 @@
 ---
 layout: home
-title: PowerCli
+title: PowerCLI
 nav_order: 2
 parent: Commands
 has_children: true
