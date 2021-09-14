@@ -9,3 +9,7 @@ ESXcli
 =======
 
 This section is intended for ESXcli commands.
+
+- Convert EagerZeroedThick
+
+`vmkfstools -k /vmfs/volumes/datastorename/vmname/vmdisk.vmdk`

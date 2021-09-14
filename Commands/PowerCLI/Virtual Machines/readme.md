@@ -1,9 +1,8 @@
 ---
 layout: home
-title: PowerCli
+title: Virtual machines
 nav_order: 2
-parent: Commands
-has_children: true
+parent: PowerCli
 ---
 
 PowerCLI
@@ -32,29 +31,9 @@ This section is intended for PowerCLI commands.
 
 `Get-View -ViewType HostSystem -Property Name, Config.Product | Select Name,{$_.Config.Product.FullName},{$_.Config.Product.Build} | ft -auto`
 
-- Login & Logout on vCenter
-`Connect-VIServer- Server FQDN server`
-`Disconnect-VIServer -Server FQDN server`
-
-- Get vCenter build number
-
-`$Global:DefaultVIServer | select name, Version, Build`
-
-- Get ESXi build number
-
-`Get-View -ViewType HostSystem -Property Name,Config.Product | Format-Table Name, @{L='Host Version & Build Version';E={$_.Config.Product.FullName}}`
-
 - Create virtual machines
 
 `New-VM -Name 'vmname' –VMHost 'VMHost-1' -Datastore 'datastorename' -DiskGB numberOfGB -MemoryGB numberOfGB -NumCpu numberOfGB -NetworkName 'vLANname'`
-
-- Create local user
-
-`New-VIRole -Name "username" -Privilege "prvilegeUser"`
-
-- Assign a new role
-
-`New-VIPermission -Entity "fqdnServer" -Principal "account-name" -Role "role" -Propagate:$true`
 
 - Storage vMotion with storage format
 
@@ -64,19 +43,3 @@ This section is intended for PowerCLI commands.
 `$myDatastore = Get-Datastore -Name 'datastorename'`
 `$myDisk = Get-VM -Name vmname | Get-HardDisk |Where {$_.Name -eq "hard_disk_id"}`
 `Move-HardDisk -HardDisk $myDisk -Datastore $myDatastore`
-
-- List vLANs
-
-`Get-VirtualSwitch -Name dvSwitch_name | Get-VirtualPortGroup | Select Name, VLanId`
-
-- Add vLAN
-
-`Get-Cluster "clusterName" | Get-VMHost | Get-VirtualSwitch -name dvSwitch_name | New-VirtualPortGroup -name "dvPortGroup_name" -VLanId id`
-
-- Extend datastore
-
-`$datastore = get-datastore datastorename
-$esxi = Get-View -Id ($Datastore.ExtensionData.Host |Select-Object -last 1 | Select -ExpandProperty Key)
-$datastoreSystem = Get-View -Id $esxi.ConfigManager.DatastoreSystem
-$expandOptions = $datastoreSystem.QueryVmfsDatastoreExpandOptions($datastore.ExtensionData.MoRef)
-$datastoreSystem.ExpandVmfsDatastore($datastore.ExtensionData.MoRef,$expandOptions.spec)`
