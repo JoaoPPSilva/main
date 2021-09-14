@@ -1,5 +1,8 @@
 ---
+layout: home
+title: Commands
 nav_order: 2
+has_childre: true
 ---
 
 Commands
