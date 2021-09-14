@@ -2,7 +2,7 @@
 layout: home
 title: Health Check
 nav_order: 3
-parent: PowerCli
+parent: PowerCLI
 ---
 
 PowerCLI

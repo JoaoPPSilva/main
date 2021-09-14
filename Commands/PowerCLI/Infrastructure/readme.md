@@ -2,7 +2,7 @@
 layout: home
 title: Infrastructure
 nav_order: 1
-parent: PowerCli
+parent: PowerCLI
 ---
 
 PowerCLI
