@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Virtual machines
+title: Virtual Machines
 nav_order: 2
 parent: PowerCli
 ---
