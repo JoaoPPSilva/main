@@ -11,6 +11,11 @@ readme_index:
   remove_originals: true
   with_frontmatter: true
 
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+
+logo: "/assets/images/vmware-logo1.png"
+
 aux_links:
   "GitHub":
     - "//github.com/JoaoPPSilva/main"
