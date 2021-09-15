@@ -41,6 +41,7 @@ Commands for PowerCLI.
 `Get-VM vmname |Get-Harddisk |Where {$_.Name -eq "hard_disk_id"} | Move-HardDisk -Datastore datastorename -StorageFormat EagerZeroedThick`
 
 - Move disk to another datastorename
+
 `$myDatastore = Get-Datastore -Name 'datastorename'`
 `$myDisk = Get-VM -Name vmname | Get-HardDisk |Where {$_.Name -eq "hard_disk_id"}`
 `Move-HardDisk -HardDisk $myDisk -Datastore $myDatastore`
