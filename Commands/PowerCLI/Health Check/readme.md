@@ -13,7 +13,7 @@ Commands for PowerCLI.
 
 - Add BUN message
 
-` Get-VMHost | Get-AdvancedSetting -Name 'Config.Etc.issue' | Set-AdvancedSetting -value "Put your message here"`
+`Get-VMHost | Get-AdvancedSetting -Name 'Config.Etc.issue' | Set-AdvancedSetting -value "Put your message here"`
 `Get-VMHost | Get-AdvancedSetting -Name 'Annotations.WelcomeMessage' | Set-AdvancedSetting -value "Put your message here"`
 
 - Shell timeout session
