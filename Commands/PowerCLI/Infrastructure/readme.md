@@ -47,3 +47,12 @@ $esxi = Get-View -Id ($Datastore.ExtensionData.Host |Select-Object -last 1 | Sel
 $datastoreSystem = Get-View -Id $esxi.ConfigManager.DatastoreSystem
 $expandOptions = $datastoreSystem.QueryVmfsDatastoreExpandOptions($datastore.ExtensionData.MoRef)
 $datastoreSystem.ExpandVmfsDatastore($datastore.ExtensionData.MoRef,$expandOptions.spec)`
+
+- CPU ratio
+
+`(get-cluster $ClusterName | Get-vm | Where Powerstate -eq "PoweredOn" | Measure NumCpu -sum).sum / (((Get-cluster $ClusterName | Get-vmhost).extensiondata.summary.hardware | Measure -Property numCpuCores -Sum).sum)`
+
+- Create a new dvSwitch
+
+`$myDatacenter = Get-Datacenter -Name "datacenterName"
+New-VDSwitch -Name "dvSwitch_name" -Location $myDatacenter -Version "6.6.0"`
