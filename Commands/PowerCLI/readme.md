@@ -9,4 +9,4 @@ has_children: true
 PowerCLI
 =======
 
-This section is intended for PowerCLI commands.
+Commands for PowerCLI.

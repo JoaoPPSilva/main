@@ -7,4 +7,4 @@ has_children: true
 Commands
 =======
 
-This section is intended for PowerCLI and ESXcli commands.
+Commands for PowerCLI and ESXcli commands.

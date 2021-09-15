@@ -9,7 +9,7 @@ grand_parent: Commands
 PowerCLI
 =======
 
-This section is intended for PowerCLI commands.
+Commands for PowerCLI.
 
 - Login & Logout on vCenter
 `Connect-VIServer- Server FQDN server`

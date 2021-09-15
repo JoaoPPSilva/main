@@ -9,7 +9,7 @@ grand_parent: Commands
 PowerCLI
 =======
 
-This section is intended for PowerCLI commands.
+Commands for PowerCLI.
 
 - Hard disk - SCSi id
 
