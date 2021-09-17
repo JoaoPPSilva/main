@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Manage Settings
+title: Manage_Settings
 nav_order: 1
-parent: Virtual Machines
-grand_parent: scripts
+parent: Virtual_Machines
+grand_parent: Scripts
 ---
 
 Manage Settings
