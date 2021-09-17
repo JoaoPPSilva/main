@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Health Check
-nav_order: 3
+title: Manage Settings
+nav_order: 1
 parent: Virtual Machines
 grand_parent: Scripts
 ---
