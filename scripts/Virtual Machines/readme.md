@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Virtual Machines
-nav_order: 1
+nav_order: 2
 parent: Scripts
 ---
 
