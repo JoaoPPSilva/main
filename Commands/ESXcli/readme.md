@@ -23,3 +23,9 @@ vim-cmd hostsvc/maintenance_mode_enter
 ls -l /vmfs/volumes/datastorename/folderName
 esxcli software vib update -d "/vmfs/volumes/datastorename/folderName/patch.zip"
 ```
+
+- Extend  EagerZeroedThick disk
+
+```
+vmkfstools -X newSize G -d eagerzeroedthick /vmfs/volumes/datastorename/disk.vmdk
+```
