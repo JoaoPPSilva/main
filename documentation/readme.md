@@ -1,6 +1,8 @@
 ---
 layout: home
-nav-order: 3
+title: documentation
+nav_order: 2
+has_children: true
 ---
 
 Documentation
