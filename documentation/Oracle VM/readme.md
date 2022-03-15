@@ -15,4 +15,4 @@ OVM manager
 ![Add a VG](/assets/images/Picture2.jpg "Add a VG")
 
 2. Restart ssh service
->service sshd restart
+> service sshd restart
