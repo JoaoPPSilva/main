@@ -11,4 +11,4 @@ Oracle VM
 OVM manager
 -----------
 1. Add a new disk with 50Gb and create a Volume Group (VG)
-![Add a VG](/assets/images/Picture1.png)
+![Add a VG](/assets/images/Picture1.jpg)
