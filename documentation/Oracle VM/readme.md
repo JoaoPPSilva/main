@@ -2,7 +2,7 @@
 layout: home
 title: Oracle VM
 nav_order: 1
-parent: documentation
+parent: Documentation
 ---
 
 Oracle VM
