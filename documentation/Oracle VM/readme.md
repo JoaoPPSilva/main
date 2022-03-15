@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Oracle VM
-nav_order: 2
+nav_order: 3
 parent: Oracle VM
 grand_parent: documentation
 ---
 
-Oravle VM
+Oracle VM
 =========
