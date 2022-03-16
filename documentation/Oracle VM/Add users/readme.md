@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Add users
-nav_order: 3
+nav_order: 1
 parent: Oracle VM
 grand_parent: Documentation
 ---
