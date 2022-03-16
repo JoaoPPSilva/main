@@ -92,3 +92,34 @@ OVM Manager - web interface
 ![Config bonds](/main/assets/images/Picture9.png)
 ![Config bonds](/main/assets/images/Picture10.png)
 ![Config bonds](/main/assets/images/Picture11.png)
+
+3. Create cluster
+![Config bonds](/main/assets/images/Picture12.png)
+![Config bonds](/main/assets/images/Picture13.png)
+![Config bonds](/main/assets/images/Picture14.png)
+![Config bonds](/main/assets/images/Picture15.png)
+![Config bonds](/main/assets/images/Picture16.png)
+![Config bonds](/main/assets/images/Picture17.png)
+
+4. Create a production bond
+![Config bonds](/main/assets/images/Picture18.png)
+![Config bonds](/main/assets/images/Picture19.png)
+![Config bonds](/main/assets/images/Picture20.png)
+![Config bonds](/main/assets/images/Picture21.png)
+
+5. Network configuration
+![Config network](/main/assets/images/Picture22.png)
+![Config network](/main/assets/images/Picture23.png)
+![Config network](/main/assets/images/Picture24.png)
+![Config network](/main/assets/images/Picture25.png)
+![Config network](/main/assets/images/Picture26.png)
+![Config network](/main/assets/images/Picture27.png)
+
+6. Create repositories
+![Config network](/main/assets/images/Picture28.png)
+![Config network](/main/assets/images/Picture29.png)
+![Config network](/main/assets/images/Picture30.png)
+![Config network](/main/assets/images/Picture31.png)
+![Config network](/main/assets/images/Picture32.png)
+
+
