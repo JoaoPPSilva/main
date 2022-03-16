@@ -14,9 +14,14 @@ OVM manager
 ![Add a VG!](/main/assets/images/Picture3.png)
 ![Add a VG!](/main/assets/images/Picture4.png)
 
-2. Restart ssh service
+2. Permit root login and restart ssh service
 ```
-service sshd restart
+#vi /etc/ssh/sshd_config
+
+#Authentication --Section
+PermitRootLogin yes
+
+#service sshd restart
 ```
 
 3. Delete all repos except the RedHat repository
@@ -30,6 +35,7 @@ redhat.repo serverbuild.repo serbuild.repo.bak
 
 4. Add a client search domain on server
 ![Add a search domain!](/main/assets/images/Picture5.png)
+
 ```
 #/etc/resolv.conf
 ```
@@ -68,3 +74,7 @@ redhat.repo serverbuild.repo serbuild.repo.bak
 ```
 https://nameserver:7002/ovm/console
 ```
+
+Host OVM
+--------
+
