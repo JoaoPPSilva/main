@@ -11,8 +11,8 @@ Oracle VM
 OVM manager
 -----------
 1. Add a new disk with 50Gb and create a Volume Group (VG)
-![Add a VG!](/main/assets/images/Picture3.png)
-![Add a VG!](/main/assets/images/Picture4.png)
+![Add a VG](/main/assets/images/Picture3.png)
+![Add a VG](/main/assets/images/Picture4.png)
 
 2. Permit root login and restart ssh service
 ```
@@ -74,3 +74,21 @@ https://nameserver:7002/ovm/console
 Host OVM
 --------
 
+1. Add all information about other hosts and managers in host file
+
+2. Add DNS servers
+```
+#vi /etc/ntp.conf
+```
+
+OVM Manager - web interface
+---------------------------
+1. Add hosts
+![Add hosts](/main/assets/images/Picture6.png)
+![Add hosts](/main/assets/images/Picture7.png)
+
+2. Config bonds
+![Config bonds](/main/assets/images/Picture8.png)
+![Config bonds](/main/assets/images/Picture9.png)
+![Config bonds](/main/assets/images/Picture10.png)
+![Config bonds](/main/assets/images/Picture11.png)
