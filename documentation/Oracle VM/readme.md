@@ -17,10 +17,8 @@ OVM manager
 2. Permit root login and restart ssh service
 ```
 #vi /etc/ssh/sshd_config
-
 #Authentication --Section
 PermitRootLogin yes
-
 #service sshd restart
 ```
 
