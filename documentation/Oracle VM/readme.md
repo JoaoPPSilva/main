@@ -34,6 +34,7 @@ redhat.repo serverbuild.repo serbuild.repo.bak
 ```
 
 4. Add a client search domain on server
+
 ![Add a search domain!](/main/assets/images/Picture5.png)
 
 ```
