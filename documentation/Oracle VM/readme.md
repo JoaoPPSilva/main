@@ -12,7 +12,7 @@ OVM manager
 -----------
 1. Add a new disk with 50Gb and create a Volume Group (VG)
 ![Add a VG!](/assets/images/Picture3.png "Add a VG")
-![Add a VG!](/assets/images/Picture2.png "Add a VG")
+![Add a VG!](/assets/images/Picture4.png "Add a VG")
 
 2. Restart ssh service
 ```
