@@ -28,3 +28,42 @@ redhat.repo serverbuild.repo serbuild.repo.bak
 #rm -rf serverbuild.repo.bak
 ```
 
+4. Add a client search domain on server
+```
+#/etc/resolv.conf
+```
+
+5. Remove mariaDB
+```
+#yum remove mariadb-libs
+```
+
+6. Install dependencies
+```
+#yum install perl-Data-Dumper policycoreutils-python
+```
+
+7. Change a tmp permission for execute
+
+8. Create /u01 and execute the following commands
+```
+#mkdir /u01
+#mount -a
+```
+
+9. Mount iso on virtual machine and start OVM manager installation
+```
+#mount /dev/cdrom/mnt/
+#cd /mnt/
+#./createOracle.sh
+```
+
+10. Run script for installation and choose option to install
+```
+#./runinstaller.sh
+```
+
+11. Open URL in your browser
+```
+https://nameserver:7002/ovm/console
+```
