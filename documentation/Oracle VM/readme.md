@@ -11,8 +11,8 @@ Oracle VM
 OVM manager
 -----------
 1. Add a new disk with 50Gb and create a Volume Group (VG)
-![Add a VG!](/assets/images/Picture3.png "Add a VG")
-![Add a VG!](/assets/images/Picture4.png "Add a VG")
+![Add a VG!](/assets/images/Picture3.png)
+![Add a VG!](/assets/images/Picture4.png)
 
 2. Restart ssh service
 ```
@@ -29,6 +29,7 @@ redhat.repo serverbuild.repo serbuild.repo.bak
 ```
 
 4. Add a client search domain on server
+![Add a search domain!](/assets/images/Picture5.png)
 ```
 #/etc/resolv.conf
 ```
