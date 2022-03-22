@@ -57,3 +57,11 @@ Commands for PowerCLI.
   $myDatacenter = Get-Datacenter -Name "datacenterName"
   New-VDSwitch -Name "dvSwitch_name" -Location $myDatacenter -Version "6.6.0"
   ```
+- Export roles and permissions
+  ```
+  $reportName = "D:\Users\ptins507\Desktop\report\report.xlsx"
+  Get-VIPermission | Select @{N='vCenter';E={$_.Uid.Split('@:')[1]}},Principal,Role,@{n='Entity';E={$_.Entity.Name}},@{N='Entity Type';E={$_.EntityId.Split('-')[0]}} | 
+    Export-excel -Path $reportName -WorksheetName Permissions
+  Get-VIRole | Select @{N='vCenter';E={$_.Uid.Split('@:')[1]}},Name,@{N='PrivilegeList';E={[string]::Join([char]10,$_.PrivilegeList)}} | 
+    Export-Excel -Path $reportName -WorksheetName Roles
+  ```
