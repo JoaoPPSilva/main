@@ -65,3 +65,22 @@ Commands for PowerCLI.
   Get-VIRole | Select @{N='vCenter';E={$_.Uid.Split('@:')[1]}},Name,@{N='PrivilegeList';E={[string]::Join([char]10,$_.PrivilegeList)}} | 
     Export-Excel -Path $reportName -WorksheetName Roles
   ```
+- Set user vsphere.local password to never expired
+  ```
+  # cd /usr/
+  # ls
+  bin  include  java  lib  lib64  libexec  local  sbin  share  src  ssl
+  # cd lib
+  # ls
+  # cd vmware-vmafd/
+  # cd bin/
+  # ls
+  cdc-cli  dir-cli  domainjoin  vdcpromo  vecs-cli  vmafd-cli
+  # ./dir-cli user find-by-name --account itm_vmware
+  Enter password for administrator@vsphere.local:
+  Account: itm_vmware
+  UPN: itm_vmware@VSPHERE.LOCAL
+  # ./dir-cli user modify --account itm_vmware --password-never-expires
+  Enter password for administrator@vsphere.local:
+  Password set to never expire for [itm_vmware].
+  ```
